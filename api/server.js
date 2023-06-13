@@ -13,6 +13,7 @@ const server = express();
 const postRouter = require("./posts/posts-router")
 
 
+
 //Middlewares
 server.use(express.json());
 
@@ -20,5 +21,6 @@ server.use(express.json());
 server.use("/api/posts",postRouter);
 
 
+//Exports
 
 module.exports = server; 
